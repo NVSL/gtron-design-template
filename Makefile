@@ -7,3 +7,5 @@ default:$(TARGETS)
 
 include $(GADGETRON_ROOT)/Tools/AutomaKit/Gadgetron.make
 
+test:
+	true
