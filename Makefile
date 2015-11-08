@@ -1,11 +1,7 @@
 DESIGNS=$(wildcard *.gspec)
 TARGETS= $(patsubst %.gspec,%.all,$(DESIGNS))
 
-build: default
+build: $(TARGETS)
 
-default:$(TARGETS)
+include $(GADGETRON_ROOT)/Tools/Gadgetron/Gadgetron.make
 
-include $(GADGETRON_ROOT)/Tools/AutomaKit/Gadgetron.make
-
-test:
-	true
